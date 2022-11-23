@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;700&display=swap");
+
+body {
+    font-family: "Archivo Narrow", sans-serif;
+    min-height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 10vh 90vh;
+    grid-template-columns: 100vw;
+    grid-template-areas:
+        "header"
+        "main";
+}
+
+header nav {
+    display: none;
+}
+
+header nav.open {
+    position: absolute;
+    top: 10vh;
+    height: 100%;
+    width: 100%;
+    background-color: #231c1c;
+    display: flex;
+    justify-content: center;
+}
+
+nav.open ul {
+    margin-top: 5rem;
+    width: 60vw;
+    list-style: none;
+}
+
+nav.open ul li {
+    padding: 30px;
+    border-bottom: 2px solid white;
+    text-align: center;
+}
+
+nav.open ul li a {
+    padding: 15px 5px;
+    color: white;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+header {
+    grid-area: header;
+    height: 100%;
+    width: 100%;
+    background-color: #00e725;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 15px;
+    font-size: 2.3rem;
+    text-transform: uppercase;
+}
+
+.menu {
+    margin-right: 15px;
+}
+
+.menu img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+}
+
+main section:nth-child(1) {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #00e725;
+}
+
+.coracao-logo {
+    margin-top: 3.6rem;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.coracao-logo img {
+    width: 200px;
+}
+
+.coracao-logo > * {
+    margin: 10px;
+}
+
+.coracao-logo h1 {
+    text-transform: uppercase;
+    font-size: 3.5rem;
+}
+
+.coracao-logo p {
+    font-size: 1.9rem;
+    text-align: center;
+}
+
+main section:nth-child(2) {
+    height: 30%;
+    width: 100%;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+main section:nth-child(2) a {
+    padding-bottom: 5px;
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    border-bottom: 2px solid white;
+}
