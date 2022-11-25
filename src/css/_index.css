@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;700&display=swap");
+
+body {
+    font-family: "Archivo Narrow", sans-serif;
+    min-height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 10vh 90vh;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "main";
+}
