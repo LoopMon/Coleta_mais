@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/_reset.css" />
+        <link rel="stylesheet" href="../css/_index.css" />
+        <link rel="stylesheet" href="../css/_header.css" />
+        <title>Coleta+ - Contato</title>
+    </head>
+    <body>
+        <header>
+            <div class="voltar">
+                <a href="../../index.html">
+                    <img src="../../assets/voltar.png" alt="voltar" />
+                </a>
+            </div>
+
+            <div class="logo">
+                <a href="../../index.html">Coleta+</a>
+            </div>
+
+            <div class="menu">
+                <img src="../../assets/menu.png" alt="menu" />
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="./planos.html">Planos</a></li>
+                    <li>
+                        <a href="./quem-somos.html">Quem Somos?</a>
+                    </li>
+                    <li><a href="./contato.html">Contato</a></li>
+                    <li><a href="./entrar.html">Entrar</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Scripts -->
+        <script>
+            const menu = document.querySelector(".menu")
+            const nav = document.querySelector("header nav")
+            let menuOpen = false
+
+            menu.onclick = () => {
+                if (!menuOpen) {
+                    menu.querySelector("img").src = "../../assets/fechar.png"
+                    menuOpen = true
+                } else {
+                    menu.querySelector("img").src = "../../assets/menu.png"
+                    menuOpen = false
+                }
+                nav.classList.toggle("open")
+            }
+        </script>
+    </body>
+</html>
