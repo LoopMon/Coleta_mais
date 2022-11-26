@@ -1,0 +1,193 @@
+main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #231c1c;
+    gap: 10px;
+}
+
+section:nth-child(1) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+    width: 70%;
+    border-bottom: 2px solid white;
+}
+
+.info p {
+    padding: 15px;
+    text-align: justify;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.busca {
+    margin-top: 15px;
+    position: relative;
+    width: 70%;
+    height: 45px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.busca > img {
+    cursor: pointer;
+    width: 45px;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    transform: translateX(-50%);
+}
+
+.busca input {
+    width: 100%;
+    height: 100%;
+    padding-left: 10%;
+    font-size: 1.1rem;
+}
+
+.busca input::placeholder {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.duvida img {
+    width: 10px;
+}
+
+section:nth-child(2) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.duvida {
+    padding: 0px 15vw;
+    width: 100%;
+    height: 35px;
+    border-bottom: 2px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.duvida span {
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.contato {
+    margin-top: 20px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato span {
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.contato a {
+    margin-top: 30px;
+    gap: 10px;
+    display: flex;
+    background-color: #00e725;
+    border-radius: 5px;
+    align-items: center;
+    padding: 5px 25px;
+    color: black;
+}
+
+.contato a img {
+    width: 25px;
+}
+
+@media (min-width: 800px) {
+    main {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    main section {
+        margin-top: 50px;
+    }
+
+    .info {
+        border: none;
+        width: 80%;
+    }
+
+    .busca {
+        width: 80%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 5px;
+    }
+
+    .busca input {
+        padding: 0px 8px;
+        border-radius: 10px;
+        width: 70%;
+        height: 100%;
+    }
+
+    .busca a {
+        padding: 3px 10px;
+        border-radius: 10px;
+        background-color: #8a2be2;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .busca a img {
+        width: 35px;
+    }
+
+    .duvida {
+        width: 70%;
+        padding: 5px;
+    }
+
+    .contato {
+        margin-top: 50px;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .contato div {
+        align-items: flex-start;
+    }
+
+    .contato span {
+        font-size: 1.1rem;
+    }
+
+    .contato a {
+        margin: 0;
+        padding: 10px 30px;
+        font-size: 1.3rem;
+    }
+}
