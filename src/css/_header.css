@@ -14,12 +14,11 @@ header nav.open {
 }
 
 nav.open ul {
-    margin-top: 2rem;
     width: 60vw;
 }
 
 nav.open ul li {
-    padding: 30px;
+    padding: 25px;
     border-bottom: 2px solid white;
     text-align: center;
 }
@@ -45,6 +44,7 @@ header {
 .voltar {
     margin-left: 20px;
 }
+
 .voltar img {
     width: 40px;
     height: 40px;
@@ -74,9 +74,18 @@ header {
     .voltar {
         display: none;
     }
+
+    .logo a {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .logo img {
         height: 10vh;
     }
+
     .menu {
         display: none;
     }
