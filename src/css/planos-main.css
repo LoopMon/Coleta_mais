@@ -1,0 +1,115 @@
+main {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #231c1c;
+}
+
+section {
+    margin: 20px 15px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    border-bottom: 2px solid white;
+    width: 90%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header h1 {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.planos {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.plano {
+    margin-top: 15px;
+    background-color: #111;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.plano-nome {
+    margin-top: 5px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #dcff52;
+}
+
+.plano-nome h3 {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 100;
+    text-align: center;
+}
+
+.plano-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.plano-desc ul li {
+    color: white;
+    text-transform: uppercase;
+}
+
+.plano-desc a {
+    color: #000;
+    padding: 5px 20px;
+    background-color: #00e725;
+    border-radius: 5px;
+}
+
+@media (min-width: 800px) {
+    .header {
+        border: none;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .header h1 {
+        font-size: 2.1rem;
+    }
+
+    .planos {
+        margin-top: 30px;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .plano {
+        width: 35vw;
+        height: 40vh;
+    }
+
+    .plano-desc {
+        height: 80%;
+        justify-content: space-around;
+    }
+
+    .plano-desc ul {
+        list-style: circle;
+    }
+}

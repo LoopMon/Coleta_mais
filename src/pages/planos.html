@@ -1,1 +1,101 @@
-<h1>Ainda não</h1>
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/_reset.css" />
+        <link rel="stylesheet" href="../css/_index.css" />
+        <link rel="stylesheet" href="../css/_header.css" />
+        <link rel="stylesheet" href="../css/planos-main.css" />
+        <title>Coleta+ - Planos</title>
+        <script src="../js/planos-MobileDesktop.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div class="voltar">
+                <a href="../../index.html">
+                    <img src="../../assets/voltar.png" alt="voltar" />
+                </a>
+            </div>
+
+            <div class="logo">
+                <a href="../../index.html">Coleta+</a>
+            </div>
+
+            <div class="menu">
+                <img src="../../assets/menu.png" alt="menu" />
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="./planos.html">Planos</a></li>
+                    <li>
+                        <a href="./quem-somos.html">Quem Somos?</a>
+                    </li>
+                    <li><a href="./contato.html">Contato</a></li>
+                    <li><a href="./criar-conta.html">Criar conta</a></li>
+                    <li><a href="./entrar.html">Entrar</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <div class="header">
+                    <h1>
+                        Aqui estão nossos planos que podem ser <br />
+                        adquiridos mensalmente
+                    </h1>
+                </div>
+
+                <div class="planos">
+                    <div class="plano">
+                        <div class="plano-nome">
+                            <h3>Plano <br />Gratuito</h3>
+                        </div>
+                        <div class="plano-desc">
+                            <ul>
+                                <li>5 coletas mensais</li>
+                                <li>1 coleta volumosa</li>
+                                <li>Acesso as rotas diárias</li>
+                            </ul>
+                            <a href="#">R$ 0,00</a>
+                        </div>
+                    </div>
+                    <div class="plano">
+                        <div class="plano-nome">
+                            <h3>Plano <br />Coleta+</h3>
+                        </div>
+                        <div class="plano-desc">
+                            <ul>
+                                <li>coletas mensais ilimitadas</li>
+                                <li>coleta volumosas ilimitadas</li>
+                                <li>Acesso as rotas diárias</li>
+                            </ul>
+                            <a href="#">R$ 19,99</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Scripts -->
+        <script>
+            const menu = document.querySelector(".menu")
+            const nav = document.querySelector("header nav")
+            let menuOpen = false
+
+            menu.onclick = () => {
+                if (!menuOpen) {
+                    menu.querySelector("img").src = "../../assets/fechar.png"
+                    menuOpen = true
+                } else {
+                    menu.querySelector("img").src = "../../assets/menu.png"
+                    menuOpen = false
+                }
+                nav.classList.toggle("open")
+            }
+        </script>
+    </body>
+</html>
