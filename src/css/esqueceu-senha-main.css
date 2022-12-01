@@ -1,0 +1,94 @@
+main {
+    display: flex;
+    justify-content: center;
+    background-color: #231c1c;
+}
+
+section {
+    width: 80vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.esqueceu-a-senha {
+    height: 60vh;
+    width: 400px;
+}
+
+.header {
+    border-bottom: 2px solid white;
+    width: 90%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header h1 {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.campo {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.campo label {
+    color: white;
+    margin-left: 5px;
+}
+
+.campo input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.submit button {
+    padding: 10px 40px;
+    color: white;
+    background-color: #016122;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (min-width: 800px) {
+    section {
+        align-items: center;
+    }
+    .esqueceu-a-senha {
+        height: 65vh;
+        width: 400px;
+        background-color: #333;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header {
+        border: none;
+    }
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .submit {
+        margin-bottom: 10px;
+    }
+}
