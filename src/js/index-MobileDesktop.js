@@ -28,7 +28,7 @@ btnEntrarDesktop.innerHTML = `
     />
     <span>Quer utilizar nossos serviços?</span>
     <span>Crie e acesse sua conta.</span>
-    <a href="./src/pages/entrar.html">Começar</a>
+    <a href="./src/pages/criar-conta.html">Começar</a>
 `
 sec2.appendChild(btnSaibaMais)
 sec2.appendChild(btnEntrarMobile)
