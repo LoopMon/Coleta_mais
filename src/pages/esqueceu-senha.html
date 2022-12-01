@@ -7,9 +7,9 @@
         <link rel="stylesheet" href="../css/_reset.css" />
         <link rel="stylesheet" href="../css/_index.css" />
         <link rel="stylesheet" href="../css/_header.css" />
-        <link rel="stylesheet" href="../css/criar-conta-main.css" />
-        <title>Coleta+ - Escolher Conta</title>
-        <script src="../js/criar-conta-MobileDeskop.js" defer></script>
+        <link rel="stylesheet" href="../css/esqueceu-senha-main.css" />
+        <title>Coleta+ - Esqueci a Senha</title>
+        <script src="../js/esqueceu-senha-MobileDesktop.js" defer></script>
     </head>
     <body>
         <header>
@@ -42,35 +42,44 @@
 
         <main>
             <section>
-                <div class="header">
-                    <h1>Selecione o tipo da sua conta:</h1>
-                </div>
-                <div class="contas">
-                    <a href="../pages/login-usuario.html" class="conta">
-                        <div class="perfil">
-                            <div></div>
-                            <img
-                                id="user"
-                                src="../../assets/icone-usuario.png"
-                                alt="Usuário"
+                <div class="esqueceu-a-senha">
+                    <div class="header">
+                        <h1>Esqueceu a senha?</h1>
+                    </div>
+                    <form action="">
+                        <div class="campo campo-email">
+                            <label for="email">E-mail:</label>
+                            <input
+                                type="email"
+                                name="email"
+                                id="email"
+                                required
                             />
                         </div>
-                        <div class="nome">
-                            <h3>Cliente</h3>
-                        </div>
-                    </a>
-                    <a href="../pages/login-associacao.html" class="conta">
-                        <div class="perfil">
-                            <img
-                                id="assoc"
-                                src="../../assets/icone-associacao.png"
-                                alt="Associação"
+                        <div class="campo campo-senha">
+                            <label for="senha">Nova senha:</label>
+                            <input
+                                type="password"
+                                name="senha"
+                                id="senha"
+                                required
                             />
                         </div>
-                        <div class="nome">
-                            <h3>Associação</h3>
+                        <div class="campo campo-confirmar-senha">
+                            <label for="confirmar-senha">
+                                Confirmar senha:
+                            </label>
+                            <input
+                                type="password"
+                                name="confirmarSenha"
+                                id="confirmar-senha"
+                                required
+                            />
                         </div>
-                    </a>
+                        <div class="submit">
+                            <button type="submit">Alterar</button>
+                        </div>
+                    </form>
                 </div>
             </section>
         </main>

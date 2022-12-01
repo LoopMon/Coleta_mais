@@ -7,9 +7,9 @@
         <link rel="stylesheet" href="../css/_reset.css" />
         <link rel="stylesheet" href="../css/_index.css" />
         <link rel="stylesheet" href="../css/_header.css" />
-        <link rel="stylesheet" href="../css/criar-conta-main.css" />
-        <title>Coleta+ - Escolher Conta</title>
-        <script src="../js/criar-conta-MobileDeskop.js" defer></script>
+        <link rel="stylesheet" href="../css/login-usuario-main.css" />
+        <title>Coleta+ - Login Usuário</title>
+        <script src="../js/login-usuario-MobileDesktop.js" defer></script>
     </head>
     <body>
         <header>
@@ -43,35 +43,37 @@
         <main>
             <section>
                 <div class="header">
-                    <h1>Selecione o tipo da sua conta:</h1>
+                    <img src="../../assets/usuario.png" alt="Usuário" />
+                    <h3>Login</h3>
                 </div>
-                <div class="contas">
-                    <a href="../pages/login-usuario.html" class="conta">
-                        <div class="perfil">
-                            <div></div>
-                            <img
-                                id="user"
-                                src="../../assets/icone-usuario.png"
-                                alt="Usuário"
-                            />
-                        </div>
-                        <div class="nome">
-                            <h3>Cliente</h3>
-                        </div>
-                    </a>
-                    <a href="../pages/login-associacao.html" class="conta">
-                        <div class="perfil">
-                            <img
-                                id="assoc"
-                                src="../../assets/icone-associacao.png"
-                                alt="Associação"
-                            />
-                        </div>
-                        <div class="nome">
-                            <h3>Associação</h3>
-                        </div>
-                    </a>
-                </div>
+
+                <form action="">
+                    <h1>Login</h1>
+                    <div class="campo email">
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" id="email" required />
+                    </div>
+                    <div class="campo senha">
+                        <label for="senha">Senha:</label>
+                        <input
+                            type="password"
+                            name="senha"
+                            id="senha"
+                            required
+                        />
+                    </div>
+                    <div class="campo links">
+                        <a href="../pages/esqueceu-senha.html">
+                            Esqueceu a senha?
+                        </a>
+                        <a href="../pages/criar-usuario.html">
+                            Criar uma conta.
+                        </a>
+                    </div>
+                    <div class="campo botao">
+                        <button type="submit">Entrar</button>
+                    </div>
+                </form>
             </section>
         </main>
 
