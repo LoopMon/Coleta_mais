@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/_reset.css" />
+        <link rel="stylesheet" href="../css/_index.css" />
+        <link rel="stylesheet" href="../css/_header.css" />
+        <link
+            rel="stylesheet"
+            href="../css/formulario-coleta-simples-main.css"
+        />
+        <title>Coleta+ - Formulário Coleta Simples</title>
+        <script
+            src="../js/formulario-coleta-volumosa-MobileDesktop.js"
+            defer
+        ></script>
+    </head>
+    <body>
+        <header>
+            <div class="voltar">
+                <a href="./usuario-logado.html">
+                    <img
+                        src="../../assets/icone-usuario.png"
+                        alt="icone usuário"
+                    />
+                </a>
+            </div>
+
+            <div class="logo">
+                <a href="../../index.html">Coleta+</a>
+            </div>
+
+            <div class="menu">
+                <img src="../../assets/menu.png" alt="menu" />
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="./planos.html">Planos</a></li>
+                    <li>
+                        <a href="./quem-somos.html">Quem Somos?</a>
+                    </li>
+                    <li><a href="./contato.html">Contato</a></li>
+                    <li><a href="../../index.html">Sair</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <div class="header">
+                    <h1>Coleta Volumosa</h1>
+                </div>
+
+                <form action="">
+                    <div class="campo tipo-lixo">
+                        <label for="tipo-lixo">
+                            Que tipo de lixo será descartado:
+                        </label>
+                        <input
+                            type="text"
+                            name="tipoLixo"
+                            id="tipo-lixo"
+                            required
+                        />
+                    </div>
+
+                    <div class="campo endereco">
+                        <div class="bairro">
+                            <label for="bairro">Informe seu bairro:</label>
+                            <input
+                                type="text"
+                                name="bairro"
+                                id="bairro"
+                                required
+                            />
+                        </div>
+                        <div class="numero">
+                            <label for="numero">N°:</label>
+                            <input
+                                type="number"
+                                name="numero"
+                                id="numero"
+                                required
+                            />
+                        </div>
+                    </div>
+
+                    <div class="campo logradouro">
+                        <label for="logradouro">Logradouro:</label>
+                        <input
+                            type="text"
+                            name="logradouro"
+                            id="logradouro"
+                            required
+                        />
+                    </div>
+
+                    <div class="campo data-coleta">
+                        <label for="data-coleta">
+                            Informe a data da coleta
+                        </label>
+                        <input
+                            type="date"
+                            name="dataColeta"
+                            id="data-coleta"
+                            required
+                        />
+                    </div>
+
+                    <div class="campo botoes">
+                        <a href="./usuario-logado.html">Cancelar</a>
+                        <button type="submit">Solicitar</button>
+                    </div>
+                </form>
+            </section>
+
+            <section></section>
+        </main>
+
+        <!-- Scripts -->
+        <script>
+            const menu = document.querySelector(".menu")
+            const nav = document.querySelector("header nav")
+            let menuOpen = false
+
+            menu.onclick = () => {
+                if (!menuOpen) {
+                    menu.querySelector("img").src = "../../assets/fechar.png"
+                    menuOpen = true
+                } else {
+                    menu.querySelector("img").src = "../../assets/menu.png"
+                    menuOpen = false
+                }
+                nav.classList.toggle("open")
+            }
+        </script>
+    </body>
+</html>
