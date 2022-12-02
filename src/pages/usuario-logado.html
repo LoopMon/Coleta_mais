@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/_reset.css" />
+        <link rel="stylesheet" href="../css/_index.css" />
+        <link rel="stylesheet" href="../css/_header.css" />
+        <link rel="stylesheet" href="../css/usuario-logado-main.css" />
+        <title>Coleta+ - Home</title>
+        <script src="../js/usuario-logado-MobileDesktop.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div class="voltar">
+                <a href="./usuario-logado.html">
+                    <img
+                        src="../../assets/icone-usuario.png"
+                        alt="icone usuário"
+                    />
+                </a>
+            </div>
+
+            <div class="logo">
+                <a href="./usuario-logado.html">Coleta+</a>
+            </div>
+
+            <div class="menu">
+                <img src="../../assets/menu.png" alt="menu" />
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="./planos.html">Planos</a></li>
+                    <li>
+                        <a href="./quem-somos.html">Quem Somos?</a>
+                    </li>
+                    <li><a href="./contato.html">Contato</a></li>
+                    <li><a href="../../index.html">Sair</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <div class="header">
+                    <h1></h1>
+                </div>
+                <div class="botoes">
+                    <a
+                        href="./formulario-coleta-simples.html"
+                        class="botao coleta-simples"
+                    >
+                        <div>
+                            <img
+                                src="../../assets/coleta-simples.png"
+                                alt="lixeira"
+                            />
+                            <img src="../../assets/add.png" alt="adicionar" />
+                        </div>
+                        <span>Solicitar coleta simples</span>
+                        <div></div>
+                    </a>
+                    <a
+                        href="./formulario-coleta-volumosa.html"
+                        class="botao coleta-volumosa"
+                    >
+                        <div>
+                            <img
+                                src="../../assets/coleta-volumosa.png"
+                                alt="caminhão"
+                            />
+                            <img src="../../assets/add.png" alt="adicionar" />
+                        </div>
+                        <span>Solicitar coleta volumosa</span>
+                        <div></div>
+                    </a>
+                    <a href="./data-coleta.html" class="botao horario-coleta">
+                        <div>
+                            <img
+                                src="../../assets/data-coleta.png"
+                                alt="calendário"
+                            />
+                        </div>
+                        <span>Data das coletas</span>
+                        <div></div>
+                    </a>
+                    <a
+                        href="./historico-coleta.html"
+                        class="botao historico-coleta"
+                    >
+                        <div>
+                            <img
+                                src="../../assets/historico-coleta.png"
+                                alt="relógio"
+                            />
+                        </div>
+                        <span>Histórico de coletas</span>
+                        <div></div>
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <!-- Scripts -->
+        <script>
+            const menu = document.querySelector(".menu")
+            const nav = document.querySelector("header nav")
+            let menuOpen = false
+
+            menu.onclick = () => {
+                if (!menuOpen) {
+                    menu.querySelector("img").src = "../../assets/fechar.png"
+                    menuOpen = true
+                } else {
+                    menu.querySelector("img").src = "../../assets/menu.png"
+                    menuOpen = false
+                }
+                nav.classList.toggle("open")
+            }
+        </script>
+    </body>
+</html>
