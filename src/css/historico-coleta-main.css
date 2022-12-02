@@ -1,0 +1,133 @@
+main {
+    display: flex;
+    justify-content: center;
+    background-color: #231c1c;
+}
+
+section {
+    width: 80vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.header {
+    border-bottom: 2px solid white;
+    width: 90%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header h1 {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+.historicos {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.historico {
+    width: 100%;
+    padding: 10px 0px;
+    border-bottom: 2px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.historico div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.historico div h3 {
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: white;
+}
+
+.historico div span {
+    color: white;
+    margin-top: 10px;
+}
+
+.historico div ul {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    color: white;
+}
+
+.historico span {
+    color: white;
+}
+
+@media (min-width: 800px) {
+    main {
+        justify-content: flex-start;
+    }
+
+    section {
+        width: 100vw;
+    }
+
+    .historicos {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .historico {
+        border: none;
+        background-color: #333;
+        border-radius: 10px;
+        padding: 10px 30px;
+        flex-direction: column;
+    }
+
+    .historico div {
+        width: 100%;
+    }
+
+    .historico div h3 {
+        align-self: center;
+        font-size: 2rem;
+    }
+
+    .historico div span {
+        margin-top: 20px;
+        margin-left: -10px;
+    }
+
+    .historico div ul {
+        flex-direction: column;
+        list-style: circle;
+        align-items: flex-start;
+    }
+
+    .historico > span {
+        align-self: flex-end;
+    }
+    .header {
+        border: none;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .header h1 {
+        margin-left: 20px;
+        font-size: 2rem;
+    }
+}
