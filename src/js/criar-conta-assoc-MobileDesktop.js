@@ -1,3 +1,4 @@
+const form = document.querySelector("form")
 let telaMobile = false
 const img = document.createElement("img")
 img.src = "../../assets/criar-associacao.png"
@@ -34,3 +35,23 @@ window.onresize = () => {
         }
     }
 }
+
+form.addEventListener("submit", (event) => {
+    event.preventDefault()
+    const nome = form.querySelector("#nome").value
+    const cnpj = form.querySelector("#identificacao").value
+    const email = form.querySelector("#email").value
+    const senha = form.querySelector("#senha").value
+
+    const user = {
+        nome,
+        cnpj,
+        email,
+        senha,
+        tipo: "assoc",
+    }
+
+    localStorage.setItem(email, JSON.stringify(user))
+
+    window.location.href = "login-associacao.html"
+})
