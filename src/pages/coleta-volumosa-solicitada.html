@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/_reset.css" />
+        <link rel="stylesheet" href="../css/_index.css" />
+        <link rel="stylesheet" href="../css/_header.css" />
+        <link rel="stylesheet" href="../css/data-coleta-main.css" />
+        <title>Coleta+ - Coleta Solicitada</title>
+        <script
+            src="../js/coleta-simples-solicitada-MobileDesktop.js"
+            defer
+        ></script>
+    </head>
+    <body>
+        <header>
+            <div class="voltar">
+                <a href="./associacao-logada.html">
+                    <img src="../../assets/voltar.png" alt="voltar" />
+                </a>
+            </div>
+
+            <div class="logo">
+                <a href="./associacao-logada.html">Coleta+</a>
+            </div>
+
+            <div class="menu">
+                <img src="../../assets/menu.png" alt="menu" />
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="./associacao-logada.html">Painel</a></li>
+                    <li><a href="./planos.html">Planos</a></li>
+                    <li>
+                        <a href="./quem-somos.html">Quem Somos?</a>
+                    </li>
+                    <li><a href="./contato.html">Contato</a></li>
+                    <li><a href="../../index.html">Sair</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <div class="header">
+                    <h1>Coletas Volumosas Solicitadas</h1>
+                </div>
+
+                <div class="horarios">
+                    <div class="horario dia">
+                        <h3>Horário de hoje: <span>02/12/2022</span></h3>
+                        <table>
+                            <tr>
+                                <td>Morador</td>
+                                <td>Bairro</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"></td>
+                            </tr>
+                            <tr>
+                                <td>Marcos</td>
+                                <td>Jardim</td>
+                            </tr>
+                            <tr>
+                                <td>Lucas</td>
+                                <td>Esmeralda</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="horario semana">
+                        <h3>Horário da Semana: <span>27/11 a 03/12</span></h3>
+                        <table>
+                            <tr>
+                                <td>Morador</td>
+                                <td>Data da coleta</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"></td>
+                            </tr>
+                            <tr>
+                                <td>Carlos</td>
+                                <td>28/11 - Gama</td>
+                            </tr>
+                            <tr>
+                                <td>João</td>
+                                <td>30/11 - Resplendor</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Scripts -->
+        <script>
+            const menu = document.querySelector(".menu")
+            const nav = document.querySelector("header nav")
+            let menuOpen = false
+
+            menu.onclick = () => {
+                if (!menuOpen) {
+                    menu.querySelector("img").src = "../../assets/fechar.png"
+                    menuOpen = true
+                } else {
+                    menu.querySelector("img").src = "../../assets/menu.png"
+                    menuOpen = false
+                }
+                nav.classList.toggle("open")
+            }
+        </script>
+    </body>
+</html>
